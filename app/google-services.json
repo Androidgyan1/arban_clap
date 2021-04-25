@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "593832256704",
+    "project_id": "tecnomint-470fe",
+    "storage_bucket": "tecnomint-470fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593832256704:android:5c680c2b5e2321acf37925",
+        "android_client_info": {
+          "package_name": "technomint.app.arbanClap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "593832256704-d8l0bq2um5noishq6jrmpdccquh3iimo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsbZTUs453CuhV18kTTHBzj2HD_MhtmpM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "593832256704-d8l0bq2um5noishq6jrmpdccquh3iimo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

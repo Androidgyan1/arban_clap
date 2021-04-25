@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    tools:context=".RewardFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_color">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:text="Refer &amp; Earn" />
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            app:cardCornerRadius="4dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="match_parent"
+                android:src="@drawable/banner_image" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_blue_light"
+            android:layout_marginTop="8dp"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:text="Refer Via" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="6dp"
+                android:layout_marginBottom="4dp"
+                android:layout_height="80dp">
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center|top"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/whattapp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WhattApp"
+                    android:layout_gravity="bottom|center" />
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_marginBottom="4dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="6dp"
+                android:layout_centerInParent="true"
+                android:layout_height="80dp">
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center|top"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/messege" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Messege"
+                    android:layout_gravity="bottom|center" />
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_marginLeft="5dp"
+                app:cardElevation="10dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                app:cardCornerRadius="4dp"
+                android:layout_alignParentEnd="true"
+                android:layout_height="80dp">
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center|top"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/link" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Link"
+                    android:layout_gravity="bottom|center" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:text="How its Works? " />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:gravity="center"
+            android:drawableStart="@drawable/invite"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"
+            android:text="     Invite your friends to UrbanCompany " />
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:gravity="center"
+            android:drawableStart="@drawable/bonus"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"
+            android:text="     They will recive a reward of ₹ 100\non signup " />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:gravity="center"
+            android:drawableStart="@drawable/bonus"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"
+            android:text="     You receive a reward of upto ₹ 500,\nonce they book a service " />
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:text="You are yet to earn any scratch cards" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            android:text="Start reffering to get suprises" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/darker_gray" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:gravity="center"
+            android:layout_marginBottom="60dp"
+            android:drawableStart="@drawable/gift_box"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"
+            android:text="     Earn min ₹ 100 on every scratch card" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddressFill">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/latitude"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="latitude" />
+
+
+            <TextView
+                android:id="@+id/longititude"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="latitude" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:showDividers="beginning"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:startIconDrawable="@drawable/ic_baseline_person_24"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:errorEnabled="true">
+
+                <EditText
+                    android:id="@+id/customer_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Customer Id"
+                    android:fontFamily="monospace"
+                    android:backgroundTint="#2ECC71"
+                    android:inputType="textPersonName" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:showDividers="beginning"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:startIconDrawable="@drawable/ic_baseline_account_balance_24"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:errorEnabled="true">
+
+                <EditText
+                    android:id="@+id/country_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Country Name"
+                    android:fontFamily="monospace"
+                    android:backgroundTint="#2ECC71"
+                    android:inputType="textPersonName" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:weightSum="2">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="150dp"
+                    android:showDividers="beginning"
+                    app:startIconDrawable="@drawable/state"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:layout_gravity="center"
+                    app:errorEnabled="true">
+
+                    <EditText
+                        android:id="@+id/state_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="State Name"
+                        android:fontFamily="monospace"
+                        android:backgroundTint="#2ECC71"
+                        android:inputType="textPersonName" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="150dp"
+                    android:showDividers="beginning"
+                    android:layout_marginLeft="20dp"
+                    app:startIconDrawable="@drawable/city"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:layout_gravity="center"
+                    app:errorEnabled="true">
+
+                    <EditText
+                        android:id="@+id/city_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="47dp"
+                        android:backgroundTint="#2ECC71"
+                        android:fontFamily="monospace"
+                        android:hint="City Name"
+                        android:inputType="textPersonName" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:showDividers="beginning"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:startIconDrawable="@drawable/ic_baseline_location_on_24"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:layout_gravity="center"
+                app:errorEnabled="true">
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Addres"
+                    android:fontFamily="monospace"
+                    android:backgroundTint="#2ECC71"
+                    android:inputType="textPersonName" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:weightSum="2">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="150dp"
+                    android:showDividers="beginning"
+                    app:startIconDrawable="@drawable/calender"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:layout_gravity="center"
+                    app:errorEnabled="true">
+
+                    <EditText
+                        android:id="@+id/service_date"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Date"
+                        android:fontFamily="monospace"
+                        android:backgroundTint="#2ECC71" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="150dp"
+                    android:showDividers="beginning"
+                    android:layout_marginLeft="20dp"
+                    app:startIconDrawable="@drawable/time"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:layout_gravity="center"
+                    app:errorEnabled="true">
+
+                    <EditText
+                        android:clickable="true"
+                        android:editable="false"
+                        android:id="@+id/service_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Time"
+                        android:fontFamily="monospace"
+                        android:backgroundTint="#2ECC71"
+                        android:inputType="textPersonName" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:showDividers="beginning"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:startIconDrawable="@drawable/ic_baseline_account_balance_24"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:layout_gravity="center"
+                app:errorEnabled="true">
+
+                <EditText
+                    android:id="@+id/service_hour"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Service Time(in hrs)"
+                    android:fontFamily="monospace"
+                    android:backgroundTint="#2ECC71"
+                    android:inputType="textPersonName" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:showDividers="beginning"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:startIconDrawable="@drawable/ic_baseline_account_balance_24"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:layout_gravity="center"
+                app:errorEnabled="true">
+
+                <EditText
+                    android:id="@+id/customer_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Notes"
+                    android:fontFamily="monospace"
+                    android:backgroundTint="#2ECC71"
+                    android:inputType="textPersonName" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <Button
+                android:id="@+id/address_btn"
+                android:paddingRight="60dp"
+                android:paddingLeft="60dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue"
+                android:fontFamily="@font/popinnes_light"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

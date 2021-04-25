@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="technomint.app.arbanClap.Payment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <include layout="@layout/hader_tool" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="9dp"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                android:text="Select Payment Mode" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="6dp"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_height="match_parent">
+
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:id="@+id/groupradio2"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/phonepe"
+                        android:checked="true"
+                        android:fontFamily="@font/popinnes_light"
+                        android:gravity="center"
+                        android:drawableEnd="@drawable/phonepay"
+                        android:layout_margin="4dp"
+                        android:layoutDirection="rtl"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="    PhonePe UPI"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        tools:ignore="RtlCompat" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@android:color/darker_gray" />
+
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/googlepay"
+                        android:gravity="center"
+                        android:fontFamily="@font/popinnes_light"
+                        android:drawableEnd="@drawable/googlepay"
+                        android:layout_margin="4dp"
+                        android:layoutDirection="rtl"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="    Goolge Pay UPI"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        tools:ignore="RtlCompat" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@android:color/darker_gray" />
+
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/razerpay"
+                        android:gravity="center"
+                        android:fontFamily="@font/popinnes_light"
+                        android:drawableEnd="@drawable/airtel"
+                        android:layout_margin="4dp"
+                        android:layoutDirection="rtl"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="    RAZERPAY"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        tools:ignore="RtlCompat" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@android:color/darker_gray" />
+
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cod"
+                        android:gravity="center"
+                        android:fontFamily="@font/popinnes_light"
+                        android:drawableEnd="@drawable/money"
+                        android:layout_margin="4dp"
+                        android:layoutDirection="rtl"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="    Cash on Dilevery(Cod)"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        tools:ignore="RtlCompat" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@android:color/darker_gray" />
+
+
+
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/popinnes_light"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:id="@+id/sell_all_payment"
+                        android:layout_marginRight="8dp"
+                        android:drawableEnd="@drawable/right_arrow"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center|left"
+                        android:text="      See All UPI Apps"
+                        app:drawableStartCompat="@drawable/upi" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/popinnes_light"
+                        android:paddingRight="10dp"
+                        android:layout_marginRight="8dp"
+                        android:drawableEnd="@drawable/right_arrow"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center|left"
+                        android:text="      Add Existing UPI ID"
+                        app:drawableStartCompat="@drawable/addupi" />
+
+
+
+
+                </RadioGroup>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:padding="10dp"
+                    android:text="Wallet"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:id="@+id/amazon_pay"
+                    android:layout_marginRight="8dp"
+                    android:drawableEnd="@drawable/right_arrow"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center|left"
+                    android:text="      Amazon Pay"
+                    app:drawableStartCompat="@drawable/amazonpay" />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:id="@+id/paytm"
+                    android:layout_marginRight="8dp"
+                    android:drawableEnd="@drawable/right_arrow"
+                    android:layout_marginTop="80dp"
+                    android:gravity="center|left"
+                    android:text="      Paytm"
+                    app:drawableStartCompat="@drawable/paytm" />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:padding="10dp"
+                    android:text="Netbanking"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:id="@+id/hdfcbank"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center|left"
+                    android:text="      HDFC Bank"
+                    app:drawableStartCompat="@drawable/bank" />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:id="@+id/sbibank"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="80dp"
+                    android:gravity="center|left"
+                    android:text="      SBI Bank"
+                    app:drawableStartCompat="@drawable/sbi" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:id="@+id/kotakbank"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="130dp"
+                    android:gravity="center|left"
+                    android:text="      Kotak Mahindra"
+                    app:drawableStartCompat="@drawable/kotak" />
+
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:id="@+id/morebank"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="180dp"
+                    android:gravity="center|left"
+                    android:text="      More"
+                    app:drawableStartCompat="@drawable/sixtyone" />
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#4e54c8"
+                android:layout_marginTop="12dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:text="Continue"
+                    android:layout_marginRight="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:background="@android:color/white"
+                    android:layout_height="40dp" />
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

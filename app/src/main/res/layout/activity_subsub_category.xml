@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".SubsubCategory">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:paddingRight="5dp"
+        app:cardCornerRadius="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/card_recyclebest"
+        app:cardElevation="8dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/subcategory_image"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_launcher" />
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:id="@+id/subcategory_text"
+            android:padding="8dp"
+            android:textSize="24sp"
+            android:fontFamily="@font/popinnes_light" />
+
+        <ProgressBar
+            android:id="@+id/homeprogress"
+            android:layout_marginRight="12dp"
+            android:layout_width="20dp"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"
+            android:layout_height="20dp" />
+
+
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/subcategory_recycle"
+        android:layout_height="match_parent"
+        android:padding="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:text="sadsfsfsdfdsf"
+        android:id="@+id/subcategory" />
+
+
+</LinearLayout>
